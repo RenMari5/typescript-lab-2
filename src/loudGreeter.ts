@@ -1,12 +1,19 @@
 import { Greeter } from "./greeter";
 
 export class LoudGreeter extends Greeter {
-  private extra: string;
+  private extra: string = "!";
 
-  constructor(extra: string) {
-    super(greeting);
-    this.extra = extra;
+  //   constructor(extra: string) {
+  //     super(extra);
+  //     this.extra = extra;
+  //   }
+
+  addVolume(): void {
+    this.extra += "!";
   }
 
-  addVolume(): void {}
+  greet(name: string): any {
+    // return `${this.greeting}, ${name}!${this.extra}`;
+    return super.greet(name) + this.extra;
+  }
 }
