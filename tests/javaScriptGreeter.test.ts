@@ -1,4 +1,4 @@
-import { JavaScriptGreeter } from "../src/javascriptGreeter";
+import { JavaScriptGreeter } from "../src/javaScriptGreeter";
 
 describe("JavaScriptGreeter class", () => {
   test("greet method returns 'console.log(Sup, Ren!)", () => {
