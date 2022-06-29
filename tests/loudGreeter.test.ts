@@ -13,7 +13,7 @@ describe("LoudGreeter class", () => {
     const name = "Michiko";
     const greeting = "Konnichiwa";
 
-    const javaScriptGreets = new LoudGreeter(greeting).greet(name);
+    const javaScriptGreets = new LoudGreeter(greeting).greet(name).addVolume();
 
     expect(javaScriptGreets).toBe("Konnichiwa, Michiko!!!");
   });
